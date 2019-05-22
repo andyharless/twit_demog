@@ -1,1 +1,1 @@
-# Project to infer demographic information from text using machine learning
+# Project to guess demographic information from text

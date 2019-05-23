@@ -1,1 +1,1 @@
-# Project to guess demographic information from text
+# guess demographic information from text

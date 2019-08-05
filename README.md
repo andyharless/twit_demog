@@ -29,7 +29,7 @@ The basic approach is to take principal components of sentence-level embeddings 
 - [analyze_lr_poly_results.ipynb](https://nbviewer.jupyter.org/github/andyharless/twit_demog/blob/master/code/analyze_lr_poly_results.ipynb)
 
 #### Second model adding activations from LSTM network with tuned Glove embeddings
-- [save_glove_embeddings.ipynb](https://nbviewer.jupyter.org/github/andyharless/twit_demog/blob/master/code/save_glove_embeddings.ip)
+- [save_glove_embeddings.ipynb](https://nbviewer.jupyter.org/github/andyharless/twit_demog/blob/master/code/save_glove_embeddings.ipynb)
 - [twitgen_glovinit_best_dl_model.ipynb](https://nbviewer.jupyter.org/github/andyharless/twit_demog/blob/master/code/twitgen_glovinit_best_dl_model.ipynb)
 - [twitgen_glovinit_lstm_get_activations.ipynb](https://nbviewer.jupyter.org/github/andyharless/twit_demog/blob/master/code/twitgen_glovinit_lstm_get_activations.ipynb)
 - [twitgen_glovinit_lstm_save_model.ipynb](https://nbviewer.jupyter.org/github/andyharless/twit_demog/blob/master/code/twitgen_glovinit_lstm_save_model.ipynb)

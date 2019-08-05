@@ -21,7 +21,7 @@ The basic approach is to take principal components of sentence-level embeddings 
 - [process_tweets.ipynb](https://nbviewer.jupyter.org/github/andyharless/twit_demog/blob/master/code/process_tweets.ipynb): examine one set of tweets
 - [aggregate_tweets.ipynb](https://nbviewer.jupyter.org/github/andyharless/twit_demog/blob/master/code/aggregate_tweets.ipynb): extract relevant fields from tweet sets and aggregate into one file
 - [utils.py](https://github.com/andyharless/twit_demog/blob/master/code/utils.py): functions used to process tweets
-- [split_initial_tweet_corpus.ipynb](https://nbviewer.jupyter.org/github/andyharless/twit_demog/blob/master/code/split_initial_tweet_corpus.ipynb): split aggregated tweet data into train/valid/test sets
+- [split_initial_tweet_corpus.ipynb](https://nbviewer.jupyter.org/github/andyharless/twit_demog/blob/master/code/split_initial_tweet_corpus.ipynb): create train/valid/test sets with balanced classes from aggregated tweets 
 
 #### Baseline model using tuned USE-Large sentence embeddings
 - [twitgen_use_large_best.ipynb](https://nbviewer.jupyter.org/github/andyharless/twit_demog/blob/master/code/twitgen_use_large_best.ipynb): fit tuned USE-Large model and save embeddings
@@ -29,23 +29,23 @@ The basic approach is to take principal components of sentence-level embeddings 
 - [analyze_lr_poly_results.ipynb](https://nbviewer.jupyter.org/github/andyharless/twit_demog/blob/master/code/analyze_lr_poly_results.ipynb): some rough model interpretation from looking at scored tweets
 
 #### Second model adding activations from LSTM network with tuned Glove embeddings
-- [save_glove_embeddings.ipynb](https://nbviewer.jupyter.org/github/andyharless/twit_demog/blob/master/code/save_glove_embeddings.ipynb): save Glove embeddings for training data words (for future tuning)
+- [save_glove_embeddings.ipynb](https://nbviewer.jupyter.org/github/andyharless/twit_demog/blob/master/code/save_glove_embeddings.ipynb): save Glove embeddings for words in training data (for future tuning)
 - [twitgen_glovinit_best_dl_model.ipynb](https://nbviewer.jupyter.org/github/andyharless/twit_demog/blob/master/code/twitgen_glovinit_best_dl_model.ipynb): fit tuned LSTM network and save final-hidden-layer activations
 - [twitgen_glovinit_lstm_save_model.ipynb](https://nbviewer.jupyter.org/github/andyharless/twit_demog/blob/master/code/twitgen_glovinit_lstm_save_model.ipynb): fit tuned LSTM network and save weights
 - [twitgen_glovinit_lstm_get_activations.ipynb](https://nbviewer.jupyter.org/github/andyharless/twit_demog/blob/master/code/twitgen_glovinit_lstm_get_activations.ipynb): get final-hidden-layer activations from LSTM model using saved weights
 - [lr_poly_corpus_tweets_try_add_lstm.ipynb](https://nbviewer.jupyter.org/github/andyharless/twit_demog/blob/master/code/lr_poly_corpus_tweets_try_add_lstm.ipynb): fit PCA-quadratic-logistic with USE-L embeddings and LSTM activations
 
 #### Complete model adding activations from max-pooling network
-- [twitgen_glovinit_best_pooling.ipynb](https://nbviewer.jupyter.org/github/andyharless/twit_demog/blob/master/code/twitgen_glovinit_best_pooling.ipynb)
-- [twitgen_explore_words.ipynb](https://nbviewer.jupyter.org/github/andyharless/twit_demog/blob/master/code/twitgen_explore_words.ipynb)
-- [lr_poly_with_lstm_and_pooled.ipynb](https://nbviewer.jupyter.org/github/andyharless/twit_demog/blob/master/code/lr_poly_with_lstm_and_pooled.ipynb)
+- [twitgen_glovinit_best_pooling.ipynb](https://nbviewer.jupyter.org/github/andyharless/twit_demog/blob/master/code/twitgen_glovinit_best_pooling.ipynb): fit pooling network and save pooling layer activations
+- [twitgen_explore_words.ipynb](https://nbviewer.jupyter.org/github/andyharless/twit_demog/blob/master/code/twitgen_explore_words.ipynb): largely unsuccessful attempt at model interpretation
+- [lr_poly_with_lstm_and_pooled.ipynb](https://nbviewer.jupyter.org/github/andyharless/twit_demog/blob/master/code/lr_poly_with_lstm_and_pooled.ipynb): fit PCA-quadratic-logistic with USE-L, LSTM, and pooling features
 
 #### Processing data for online learning evaluation
-- [aggreagate_new_tweets.ipynb](https://nbviewer.jupyter.org/github/andyharless/twit_demog/blob/master/code/aggreagate_new_tweets.ipynb)
-- [big_corpus.ipynb](https://nbviewer.jupyter.org/github/andyharless/twit_demog/blob/master/code/big_corpus.ipynb)
+- [aggreagate_new_tweets.ipynb](https://nbviewer.jupyter.org/github/andyharless/twit_demog/blob/master/code/aggreagate_new_tweets.ipynb): extract relevant fields from more tweet sets and aggregate into one file
+- [big_corpus.ipynb](https://nbviewer.jupyter.org/github/andyharless/twit_demog/blob/master/code/big_corpus.ipynb): combine all extracted tweet data and downsample modal class
 
 #### Full model with online learning
-- [twitgen_use_large_make_embed.ipynb](https://nbviewer.jupyter.org/github/andyharless/twit_demog/blob/master/code/twitgen_use_large_make_embed.ipynb)
-- [twitgen_lstm_full_corpus_activations.ipynb](https://nbviewer.jupyter.org/github/andyharless/twit_demog/blob/master/code/twitgen_lstm_full_corpus_activations.ipynb)
-- [twitgen_pooling_full_corpus_activations.ipynb](https://nbviewer.jupyter.org/github/andyharless/twit_demog/blob/master/code/twitgen_pooling_full_corpus_activations.ipynb)
-- [twitgen_online_learning.ipynb](https://nbviewer.jupyter.org/github/andyharless/twit_demog/blob/master/code/twitgen_online_learning.ipynb)
+- [twitgen_use_large_make_embed.ipynb](https://nbviewer.jupyter.org/github/andyharless/twit_demog/blob/master/code/twitgen_use_large_make_embed.ipynb): calculate USE-L embeddings for all data
+- [twitgen_lstm_full_corpus_activations.ipynb](https://nbviewer.jupyter.org/github/andyharless/twit_demog/blob/master/code/twitgen_lstm_full_corpus_activations.ipynb): calculate LSTM final-hidden-layer activations for all data
+- [twitgen_pooling_full_corpus_activations.ipynb](https://nbviewer.jupyter.org/github/andyharless/twit_demog/blob/master/code/twitgen_pooling_full_corpus_activations.ipynb): calculate pooling model activations for all data
+- [twitgen_online_learning.ipynb](https://nbviewer.jupyter.org/github/andyharless/twit_demog/blob/master/code/twitgen_online_learning.ipynb): fit PCA-quadratic-logistic model in mini-batches and optimize hyperparameters

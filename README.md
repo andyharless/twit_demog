@@ -17,16 +17,16 @@ The basic approach is to take principal components of sentence-level embeddings 
 ### Code
 
 #### Intitial data processing
-- [get_tweets.ipynb](https://nbviewer.jupyter.org/github/andyharless/twit_demog/blob/master/code/get_tweets.ipynb)
-- [process_tweets.ipynb](https://nbviewer.jupyter.org/github/andyharless/twit_demog/blob/master/code/process_tweets.ipynb)
-- [aggregate_tweets.ipynb](https://nbviewer.jupyter.org/github/andyharless/twit_demog/blob/master/code/aggregate_tweets.ipynb)
-- [utils.py](https://github.com/andyharless/twit_demog/blob/master/code/utils.py)
-- [split_initial_tweet_corpus.ipynb](https://nbviewer.jupyter.org/github/andyharless/twit_demog/blob/master/code/split_initial_tweet_corpus.ipynb)
+- [get_tweets.ipynb](https://nbviewer.jupyter.org/github/andyharless/twit_demog/blob/master/code/get_tweets.ipynb): extract a set of relevant tweets from Twitter API stream
+- [process_tweets.ipynb](https://nbviewer.jupyter.org/github/andyharless/twit_demog/blob/master/code/process_tweets.ipynb): examine one set of tweets
+- [aggregate_tweets.ipynb](https://nbviewer.jupyter.org/github/andyharless/twit_demog/blob/master/code/aggregate_tweets.ipynb): extract relevant fields from tweet sets and aggregate into one file
+- [utils.py](https://github.com/andyharless/twit_demog/blob/master/code/utils.py): functions used to process tweets
+- [split_initial_tweet_corpus.ipynb](https://nbviewer.jupyter.org/github/andyharless/twit_demog/blob/master/code/split_initial_tweet_corpus.ipynb): split aggregated tweet data into train/valid/test sets
 
 #### Baseline model using tuned USE-Large sentence embeddings
-- [twitgen_use_large_best.ipynb](https://nbviewer.jupyter.org/github/andyharless/twit_demog/blob/master/code/twitgen_use_large_best.ipynb)
-- [lr_poly_corpus_tweets.ipynb](https://nbviewer.jupyter.org/github/andyharless/twit_demog/blob/master/code/lr_poly_corpus_tweets.ipynb)
-- [analyze_lr_poly_results.ipynb](https://nbviewer.jupyter.org/github/andyharless/twit_demog/blob/master/code/analyze_lr_poly_results.ipynb)
+- [twitgen_use_large_best.ipynb](https://nbviewer.jupyter.org/github/andyharless/twit_demog/blob/master/code/twitgen_use_large_best.ipynb): fit tuned USE-Large model and save embeddings
+- [lr_poly_corpus_tweets.ipynb](https://nbviewer.jupyter.org/github/andyharless/twit_demog/blob/master/code/lr_poly_corpus_tweets.ipynb): fit PCA-quadratic-logistic model on USE-L embedding features
+- [analyze_lr_poly_results.ipynb](https://nbviewer.jupyter.org/github/andyharless/twit_demog/blob/master/code/analyze_lr_poly_results.ipynb): some rough model interpretation from looking at scored tweets
 
 #### Second model adding activations from LSTM network with tuned Glove embeddings
 - [save_glove_embeddings.ipynb](https://nbviewer.jupyter.org/github/andyharless/twit_demog/blob/master/code/save_glove_embeddings.ipynb)

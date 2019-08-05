@@ -33,7 +33,7 @@ The basic approach is to take principal components of sentence-level embeddings 
 - [twitgen_glovinit_best_dl_model.ipynb](https://nbviewer.jupyter.org/github/andyharless/twit_demog/blob/master/code/twitgen_glovinit_best_dl_model.ipynb): fit tuned LSTM network and save final-hidden-layer activations
 - [twitgen_glovinit_lstm_save_model.ipynb](https://nbviewer.jupyter.org/github/andyharless/twit_demog/blob/master/code/twitgen_glovinit_lstm_save_model.ipynb): fit tuned LSTM network and save weights
 - [twitgen_glovinit_lstm_get_activations.ipynb](https://nbviewer.jupyter.org/github/andyharless/twit_demog/blob/master/code/twitgen_glovinit_lstm_get_activations.ipynb): get final-hidden-layer activations from LSTM model using saved weights
-- [lr_poly_corpus_tweets_try_add_lstm.ipynb](https://nbviewer.jupyter.org/github/andyharless/twit_demog/blob/master/code/lr_poly_corpus_tweets_try_add_lstm.ipynb): fit PCA-quadratic-logistic with USE-L embeddings and LSTM model activations
+- [lr_poly_corpus_tweets_try_add_lstm.ipynb](https://nbviewer.jupyter.org/github/andyharless/twit_demog/blob/master/code/lr_poly_corpus_tweets_try_add_lstm.ipynb): fit PCA-quadratic-logistic with USE-L embeddings and LSTM activations
 
 #### Complete model adding activations from max-pooling network
 - [twitgen_glovinit_best_pooling.ipynb](https://nbviewer.jupyter.org/github/andyharless/twit_demog/blob/master/code/twitgen_glovinit_best_pooling.ipynb)

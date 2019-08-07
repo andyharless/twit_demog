@@ -25,6 +25,7 @@ The basic approach is to take principal components of sentence-level embeddings 
 
 #### Baseline model using tuned USE-Large sentence embeddings
 - [twitgen_use_large_best.ipynb](https://nbviewer.jupyter.org/github/andyharless/twit_demog/blob/master/code/twitgen_use_large_best.ipynb): fit tuned USE-Large model and save embeddings
+- [twitgen_usel_best_show_performance.ipynb](https://nbviewer.jupyter.org/github/andyharless/twit_demog/blob/master/code/twitgen_usel_best_show_performance.ipynb): another run with more detail on test set performance
 - [lr_poly_corpus_tweets.ipynb](https://nbviewer.jupyter.org/github/andyharless/twit_demog/blob/master/code/lr_poly_corpus_tweets.ipynb): fit PCA-quadratic-logistic model on USE-L embedding features
 - [analyze_lr_poly_results.ipynb](https://nbviewer.jupyter.org/github/andyharless/twit_demog/blob/master/code/analyze_lr_poly_results.ipynb): some rough model interpretation from looking at scored tweets
 

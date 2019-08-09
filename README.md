@@ -38,7 +38,8 @@ The basic approach is to take principal components of sentence-level embeddings 
 - [lr_poly_corpus_tweets_try_add_lstm.ipynb](https://nbviewer.jupyter.org/github/andyharless/twit_demog/blob/master/code/lr_poly_corpus_tweets_try_add_lstm.ipynb): fit PCA-quadratic-logistic with USE-L embeddings and LSTM activations
 
 #### Complete model adding activations from max-pooling network
-- [twitgen_glovinit_best_pooling.ipynb](https://nbviewer.jupyter.org/github/andyharless/twit_demog/blob/master/code/twitgen_glovinit_best_pooling.ipynb): fit pooling network and save pooling layer activations
+- [twitgen_glovinit_best_pooling.ipynb](https://nbviewer.jupyter.org/github/andyharless/twit_demog/blob/master/code/twitgen_glovinit_best_pooling.ipynb): fit pooling network and save pooling layer activations 
+- [twitgen_glovinit_best_pool_perf.ipynb](https://nbviewer.jupyter.org/github/andyharless/twit_demog/blob/master/code/twitgen_glovinit_best_pool_perf.ipynb): test set performance of pooling model
 - [twitgen_explore_words.ipynb](https://nbviewer.jupyter.org/github/andyharless/twit_demog/blob/master/code/twitgen_explore_words.ipynb): largely unsuccessful attempt at model interpretation
 - [lr_poly_with_lstm_and_pooled.ipynb](https://nbviewer.jupyter.org/github/andyharless/twit_demog/blob/master/code/lr_poly_with_lstm_and_pooled.ipynb): fit PCA-quadratic-logistic with USE-L, LSTM, and pooling features
 
@@ -51,3 +52,11 @@ The basic approach is to take principal components of sentence-level embeddings 
 - [twitgen_lstm_full_corpus_activations.ipynb](https://nbviewer.jupyter.org/github/andyharless/twit_demog/blob/master/code/twitgen_lstm_full_corpus_activations.ipynb): calculate LSTM final-hidden-layer activations for all data
 - [twitgen_pooling_full_corpus_activations.ipynb](https://nbviewer.jupyter.org/github/andyharless/twit_demog/blob/master/code/twitgen_pooling_full_corpus_activations.ipynb): calculate pooling model activations for all data
 - [twitgen_online_learning.ipynb](https://nbviewer.jupyter.org/github/andyharless/twit_demog/blob/master/code/twitgen_online_learning.ipynb): fit PCA-quadratic-logistic model in mini-batches and optimize hyperparameters
+
+## Relevant Kaggle Kernels
+
+- [LSTM model to guess gender of tweeters](https://www.kaggle.com/aharless/lstm-model-to-guess-gender-of-tweeters): essentially another run of `twitgen_glovinit_best_dl_model.ipynb` but with more performance results 
+
+- [twitter gender with USE-Large](https://www.kaggle.com/aharless/twitter-gender-with-use-large): apply USE-L model as in `twitgen_use_large_best.ipynb` and `lr_poly_corpus_tweets.ipynb`, but without fine tuning 
+
+- [twitter gender analysis with USE-Large](https://kaggle.com/aharless/twitter-gender-analysis-with-use-large): apply USE-L without fine tuning, as above, and examine principal components as in `analyze_lr_poly_results.ipynb`

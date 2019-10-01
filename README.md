@@ -16,6 +16,9 @@ The basic approach is to take principal components of sentence-level embeddings 
 
 ### Code
 
+#### Demo
+- [tweet_gender_id_demo.ipynb](https://nbviewer.jupyter.org/github/andyharless/twit_demog/blob/master/code/tweet_gender_id_demo.ipynb): inference from fine-tuned USE=Large model (from the model trained in `twitgen_usel_best_show_perform.ipynb` under "Baseline model" below).  Model weights (2.5 GB) to run it are available at [http://andy.harless.us/uselweights/USELModel_201908071556.h5](http://andy.harless.us/uselweights/USELModel_201908071556.h5).
+
 #### Intitial data processing
 - [get_tweets.ipynb](https://nbviewer.jupyter.org/github/andyharless/twit_demog/blob/master/code/get_tweets.ipynb): extract a set of relevant tweets from Twitter API stream
 - [process_tweets.ipynb](https://nbviewer.jupyter.org/github/andyharless/twit_demog/blob/master/code/process_tweets.ipynb): examine one set of tweets
